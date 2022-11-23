@@ -1,0 +1,58 @@
+Inheritance
+ 
+It's an OOP's part. 
+Reusiblity saves times as well as money.
+DRY :- Do not Repeat Yourself.
+We can reuse a class and add additional features to it.
+
+
+1. single Inheritance: A derive class with one base class
+
+Programmer                                Employee
+                    -derives->
+                A  ----------->  B
+                 <-is derive from-
+
+2. multiple Inheritance : A derived class with more than one base class 
+
+    Employee            Assistant
+        A                   B
+        |                   |
+        ---------------------
+                 |
+                 C
+             Programmer
+
+3. Herarchical Inheritance :  Several derived classes from a single base class
+             
+                   Employee
+                      C
+                      |
+            ---------------------
+            |                   |
+            A                   B
+        Programmer           Manager
+
+4. MultiLevel Inheritance : Deriving a class from already derived class
+
+        A       animal
+        |
+        B       mammal
+        |
+        C       Bat
+
+5. Hybrid Inheritance : Hybrid Inheritanceis a combination of multiple inheritance adn MultiLevel inheritance.
+        * A class is derived from two class in multiple inheritance
+        * However , one of tha parents classes is not a base class
+
+                      Animal
+                         A           
+                         |
+                 ----------------
+                 |               |  
+  mammal         B               C       Aves(Bird)
+                 |               |  
+                 ----------------
+                         |
+                         D
+                     (ostrich)
