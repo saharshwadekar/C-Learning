@@ -1,0 +1,64 @@
+STL - Standard template Library
+
+Library of what?
+    -> Generic classes and function 
+
+Why use STL -> Reuse: Well test components
+                & time savings!
+                 
+
+history
+
+HP :: Alexzendre & manglie
+    components ko ek jut kar ke generic library banai
+
+components of STL ::
+    1. Containers -> Stores data.
+                  -> Use template classes.
+
+                  1. sequence container -> Linear Fashion EG: 1 -> 2- > 5 -> 7
+                                                           & Vector
+                                                                    -> Random Access = Fast
+                                                                    -> Insertion / Deletion in middle = Slow
+                                                                    -> Insertion / Deletion at the end =  Fast
+                                                                    
+                                                           & List
+                                                                    -> Random Access = Slow
+                                                                    -> Insertion / Deletion in middle = Fast
+                                                                    -> Insertion / Deletion at the end =  Fast
+
+                                                           & Dequeue
+                                                                      
+
+                  2. Assosiative Container -> Direct access    Eg:Map / multiMap ,
+                                            Fast Searching        Set / MultiSet
+
+                                                                    All Operation is FAst except Random Access
+                                                                    -> Random Access = Slow
+                                                                    -> Insertion / Deletion in middle = Fast
+                                                                    -> Insertion / Deletion at the end =  Fast
+
+
+                  3. Derived Containers -> Real World Modeling  Eg: Stack 
+                                                                    Queue
+                                                                    Priority_Queue
+
+                                                                    Depends upon Operation
+                                                                        -> Data Structure.
+
+    2. Algorithms -> Set of procedure to manipulate data in requirement.
+                  -> Sorting.
+                  -> Searching.
+                  -> Use template classes.
+
+    3. Iterators -> Object points to an element in a container
+                 -> handled just like pointer
+                 -> Connect Algorithm with container
+
+    eg:
+
+    container:: |   1   |    7   |   12    |     23  |   ...    |
+                    <-                       ->  
+                        Iterators moves as 
+                           instructed 
+                        by the Algorithm
