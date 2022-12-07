@@ -63,8 +63,9 @@ void bubbleSorting(int arr[], int n)
     //improved
     int i,j,indicator = 1;
     for(i=0;i<n&&indicator == 1;i++){
+        indicator = 0;
         for(j=0;j<n-1;j++){
-            indicator = 0;
+            
             if(arr[j+1]<arr[j]){
                 swap(&arr[j+1],&arr[j]);
                 indicator = 1;
